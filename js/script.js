@@ -52,6 +52,8 @@ $(function() {
 
 $(window).on('load', function() {
 
+	$('.card-link a').smoothScroll({offset: -25});
+
 	$('#more').click(function() {
 		$('.nav-dropdown').slideToggle(400);
 		if ($(window).scrollTop() < 100) {

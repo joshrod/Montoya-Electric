@@ -736,9 +736,9 @@ hr {
 
 .exp-section {
   overflow: hidden; }
-  .exp-section:nth-child(even) {
+  .exp-section:nth-of-type(odd) {
     background-color: #f0f0f0; }
-  .exp-section:nth-child(odd) {
+  .exp-section:nth-of-type(even) {
     background-color: white; }
   @media (min-width: 680px) {
     .exp-section .content-wrap {
