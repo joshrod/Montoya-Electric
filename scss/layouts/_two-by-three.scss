@@ -1,0 +1,35 @@
+.two-by-three {
+	overflow: hidden;
+	background-color: $off-white;
+
+	.content-wrap {
+		margin: 3rem auto;
+		padding: 0 1rem;
+		@include md-tablet {
+			margin: 6rem auto;
+			padding: 0 2rem;
+			display: table;
+		}
+		@include sm-desktop {
+			padding: 0 4rem;
+		}
+
+		.picture-caption {
+			margin: 3rem auto;
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			@include md-tablet {
+				margin: 0;
+				padding: 0 2rem;
+				display: table-cell;
+			}
+			@include sm-desktop {
+				padding: 0 3rem;
+			}
+		}
+	}
+}

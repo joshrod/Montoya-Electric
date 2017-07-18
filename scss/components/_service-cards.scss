@@ -1,0 +1,53 @@
+.service-card {
+	width: 100%;
+	text-align: center;
+	@include md-tablet {
+		width: 50%;
+		display: table-cell;
+	}
+	@include sm-desktop {
+		width: 25%;
+		text-align: left;
+	}
+
+	img {
+		width: auto;
+		height: 10rem;
+		@include sm-desktop {
+			height: 11rem;
+		}
+	}
+
+	h1 {
+		width: 80%;
+		margin: 2rem auto;
+		font-family: $heading-font;
+		font-weight: 400;
+		font-size: 2.6rem;
+		text-transform: uppercase;
+		@include sm-desktop {
+			width: 100%;
+			font-size: 2.8rem;
+		}
+	}
+
+	p {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.6rem;
+		color: $gray-text;
+		@include sm-desktop {
+			width: 100%;
+		}
+	}
+
+	a {
+		font-family: $body-font;
+		color: $electric-orange;
+		&:hover {
+			@include transition-effects(.2s);
+			color: $highlight-orange;
+		}
+	}
+}

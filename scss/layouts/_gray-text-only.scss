@@ -1,0 +1,25 @@
+.gray-text-only {
+	overflow: hidden;
+	background-color: $off-white;
+	color: black;
+	text-align: center;
+
+	.heading {
+		padding: 0 1rem;
+		color: black;
+	}
+
+	p {
+		max-width: 80rem;
+		margin: 3rem auto;
+		padding: 0 1rem;
+		line-height: 1.4;
+		@include md-tablet {
+			margin: 4rem auto 6rem;
+			padding-left: 7rem;
+			padding-right: 7rem;
+			font-size: 2rem;
+		}
+	}
+
+}

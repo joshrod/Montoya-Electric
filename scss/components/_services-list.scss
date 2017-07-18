@@ -1,0 +1,50 @@
+.services-list {
+
+	.heading {
+		text-align: left;
+		@include md-tablet {
+			margin-top: 0;
+		}
+	}
+
+	hr {
+		margin: 0 0 3rem;
+	}
+
+	section {
+		margin-bottom: 3rem;
+		@include md-tablet {
+			margin-bottom: 4rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	h3 {
+		font-family: $heading-font;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		@include md-tablet {
+			font-size: 1.8rem;
+		}
+	}
+
+	p {
+		font-size: 1.4rem;
+		@include md-tablet {
+			font-size: 1.6rem;
+		}
+	}
+
+	li {
+		margin-bottom: 1rem;
+		font-family: $body-font;
+		font-size: 1.4rem;
+		@include md-tablet {
+			font-size: 1.6rem;
+			margin-bottom: 2rem;
+		}
+
+	}
+}

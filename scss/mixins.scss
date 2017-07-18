@@ -1,0 +1,90 @@
+/*FIX TRANSLATE*/
+@mixin shift($transformX: -50%, $transformY: -50%) {
+	-webkit-transform: translate($transformX, $transformY);
+	    -ms-transform: translate($transformX, $transformY);
+	        transform: translate($transformX, $transformY);
+}
+
+/*ZOOM EFFECT ON PORTFOLIO LINKS*/
+@mixin zoom-pic {
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+}
+
+/*INDIVIDUAL BACKGROUNDS*/
+@mixin bg-pic($background, $position: center center) {
+	background: url($background);
+	background-position: $position;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*TRANSITION TIMES*/
+@mixin transition-effects($duration, $property: all, $curve: ease) {
+	-webkit-transition: $property $duration $curve;
+	-o-transition: $property $duration $curve;
+	transition: $property $duration $curve;
+}
+
+/*1 X 4 GRID USING TABLE CELLS*/
+@mixin four-cells($alignment: top) {
+	width: 25%;
+	padding: 0 2rem;
+	display: table-cell;
+	vertical-align: $alignment;
+}
+
+/*APPLY FLEXBOX*/
+@mixin flexbox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/*FLEX VERTICAL DIRECTION*/
+@mixin vertical-flex {
+	-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	    	-ms-flex-direction: column;
+	        	flex-direction: column;
+}
+
+/*MEDIA QUERIES*/
+@mixin md-phone {
+	@media (min-width: #{$md-phone}) {
+		@content;
+	}
+}
+
+@mixin md-tablet {
+	@media (min-width: #{$md-tablet}) {
+		@content;
+	}
+}
+
+@mixin sm-desktop {
+	@media (min-width: #{$sm-desktop}) {
+		@content;
+	}
+}
+
+@mixin lg-desktop {
+	@media (min-width: #{$lg-desktop}) {
+		@content;
+	}
+}
+
+@mixin xl-desktop {
+	@media (min-width: #{$xl-desktop}) {
+		@content;
+	}
+}

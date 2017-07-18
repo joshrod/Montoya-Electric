@@ -1,0 +1,29 @@
+.exp-section {
+	overflow: hidden;
+	&:nth-child(even) {
+		background-color: $off-white;
+	}
+	&:nth-child(odd) {
+		background-color: white;
+	}
+
+	.content-wrap {
+		@include md-tablet {
+			padding: 0 2rem;
+			display: table;
+		}
+		@include sm-desktop {
+			padding: 0 4rem;
+		}
+
+		.picture-caption {
+			@include md-tablet {
+				padding: 0 2rem;
+				display: table-cell;
+			}
+			@include sm-desktop {
+				padding: 0 3rem;
+			}
+		}
+	}
+}

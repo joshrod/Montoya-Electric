@@ -1,0 +1,32 @@
+.experience-top {
+	background-color: white;
+	overflow: hidden;
+
+	.content-wrap {
+		text-align: center;
+		@include md-tablet {
+			margin: 8rem auto;
+			padding: 0 2rem;
+			display: table;
+		}
+		@include sm-desktop {
+			padding: 0 3rem;
+		}
+
+		.card-link {
+			display: block;
+			&:nth-child(2) {
+				margin: 3rem auto;
+			}
+			@include md-tablet {
+				padding: 0 2rem;
+				display: table-cell;
+			}
+			@include sm-desktop {
+				padding: 3rem;
+			}
+
+		}
+	
+	}
+}

@@ -1,0 +1,54 @@
+.social-media {
+
+	.heading {
+		@include sm-desktop {
+			margin-top: 0;
+		}
+	}
+
+	.social-link {
+		width: 100%;
+		max-width: 30rem;
+		margin: 2rem auto;
+		text-decoration: none;
+		color: black;
+		display: table;
+		&:hover {
+			@include transition-effects(.2s);
+			@include zoom-pic;
+		}
+		@include sm-desktop {
+			max-width: 50rem;
+			margin-top: 3rem;
+			margin-left: 0;
+		}
+
+
+		.image-container {
+			width: 25%;
+			display: table-cell;
+			text-align: right;
+			@include sm-desktop {
+				text-align: left;
+			}
+			img {
+				width: auto;
+				max-height: 5rem;
+				display: inline-block;
+				@include sm-desktop {
+					max-height: 7rem;
+				}
+			}
+		}
+
+		p {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			@include sm-desktop {
+				font-size: 2.2rem;
+				text-align: left;
+			}
+		}
+	}
+}

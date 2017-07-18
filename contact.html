@@ -10,30 +10,42 @@
 			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 			<link rel="canonical" href="http://www.montoya-electric.com"/>
 			<link type="text/css" rel="stylesheet" href="css/main.css" />
+			<link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:400,700" rel="stylesheet">
 		</head>
 		<body>
-			<div class="navbar index-nav">
-				<a class="logo-link" href="index.html">
-					<img class="logo" src="images/montoyalogoblk.png">
-				</a>
-				<div class="info-bar">
-					<p>Schedule your appointment with us today!</p>
-					<a href="tel:+17732319754">(773) 231-9754</a>
-					<a href="mailto:uriel@montoya-electric.com">uriel@montoya-electric.com</a>
-					<a href="https://www.facebook.com/montoya.electric/">
-						<img src="images/socialmedia/facebookiconblk.png" alt="Facebook Logo" >
+			<div class="navbar">
+				<div class="content-wrap">
+					<a class="logo-link" href="index.html">
+						<img class="logo" src="images/montoyalogowht.png">
 					</a>
-					<a href="https://www.yelp.com/biz/montoya-electric-chicago">
-						<img src="images/socialmedia/yelplogoblk.png">
+					<div class="info-bar">
+						<div class="container">
+							<p>Schedule your appointment with us today!</p>
+							<a class="nav-contact" href="tel:+17732319754">(773) 231-9754</a>
+							<a class="nav-contact" href="mailto:uriel@montoya-electric.com">uriel@montoya-electric.com</a>
+							<div class="nav-social">
+								<a class="nav-social-link" href="https://www.facebook.com/montoya.electric/" target="_blank">
+									<img src="images/socialmedia/facebookiconwht.png" alt="Facebook Logo" >
+								</a>
+								<a class="nav-social-link" href="https://www.yelp.com/biz/montoya-electric-chicago" target="_blank">
+									<img src="images/socialmedia/yelplogowht.png" alt="Yelp Logo">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="nav-links">
+						<nav>
+							<a href="about.html">Our Company</a>
+							<a href="experience.html">Our Experience</a>
+							<a href="services.html">Our Services</a>
+							<a href="commitment.html">Our Commitment</a>
+							<a class="active" href="javascript:;">Contact Us</a>
+						</nav>
+					</div>
+					<a id="more" href="javascript:;">
+						<img src="images/morewht.svg" alt="More Icon">
 					</a>
 				</div>
-				<nav>
-					<a href="about.html">Our Company</a>
-					<a href="experience.html">Our Experience</a>
-					<a href="services.html">Our Services</a>
-					<a href="commitment.html">Our Commitment</a>
-					<a href="contact.html">Contact Us</a>
-				</nav>
 			</div>
 			<div class="nav-dropdown">
 				<a href="about.html">Our Company</a>
@@ -42,58 +54,72 @@
 				<a href="commitment.html">Our Commitment</a>
 				<a href="contact.html">Contact Us</a>
 			</div>
-			<div class="sub-hero">
-				<h1>Contact Us</h1>
-			</div>
-			<div id="formwrap">
-				<div id="form-messages"></div>
-				<form id="contactform" method="post" action="mailer.php">
-					<div class="field">
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="name" required>
-					</div>
-					<div class="field">
-						<label for="email">Email:</label>
-						<input type="email" id="email" name="email" required>
-					</div>
-					<div class="field">
-						<label for="message">Message:</label>
-						<textarea id="message" name="message" required></textarea>
-					</div>
-					<div class="field">
-						<button type="submit">Send</button>
-					</div>
-				</form>
-			</div>
-			<div class="contact-info">
-				<h1 class="heading">Contact Info</h1>
-				<hr class="separator">
-				<p>Don't see a service? Need a price estimate? Feel free to give us a call. We'll be happy to help!</p>
-				<h3>Phone: <a href="tel:+17732319754">(773) 231-9754</a></h3>
-				<h3>Email: <a href="mailto:uriel@montoya-electric.com">uriel@montoya-electric.com</a></h3>
-			</div>
-			<div class="social-media">
-				<h1 class="heading"></h1>
-				<hr class="separator">
-				<div class="flex-row">
-					<a href="http://placeholder.com"><img src="http://via.placeholder.com/70x150"></a>
-					<p>Like us on Facebook!</p>
+			<div class="sub-hero" id="contact-hero">
+				<div class="overlay">
+					<h1>Contact Us</h1>
 				</div>
-				<div class="flex-row">
-					<a href="http://placeholder.com"><img src="http://via.placeholder.com/70x150"></a>
-					<p>Review us on Yelp!</p>
+			</div>
+			<div class="contact-section">
+				<div class="content-wrap">
+					<div class="form-wrap">
+						<h1 class="heading">Send Us An Email</h1>
+						<hr class="separator">
+						<div id="form-messages"></div>
+						<form id="contactform" method="post" action="mailer.php">
+							<div class="field">
+								<label for="name">Name:</label>
+								<input type="text" id="name" name="name" required>
+							</div>
+							<div class="field">
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+							<div class="field">
+								<label for="message">Message:</label>
+								<textarea id="message" name="message" required></textarea>
+							</div>
+							<div class="field">
+								<button type="submit">Send</button>
+							</div>
+						</form>
+					</div>
+					<div class="contact-info">
+						<h1 class="heading">Contact Info</h1>
+						<hr class="separator">
+						<p>Don't see a service? Need a price estimate? Feel free to give us a call. We'll be happy to help!</p>
+						<h3>Phone: <a href="tel:+17732319754">(773) 231-9754</a></h3>
+						<h3>Email: <a href="mailto:uriel@montoya-electric.com">uriel@montoya-electric.com</a></h3>
+					</div>
+					<div class="social-media">
+						<h1 class="heading">Connect With Us</h1>
+						<hr class="separator">
+						<a class="social-link" href="https://www.facebook.com/montoya.electric/" target="_blank">
+							<div class="image-container">
+								<img src="images/socialmedia/facebookicon.png" >
+							</div>
+							<p>Like us on Facebook!</p>
+						</a>
+						<a class="social-link" href="https://www.yelp.com/biz/montoya-electric-chicago" target="_blank">
+							<div class="image-container">
+								<img src="images/socialmedia/yelplogo.png" >
+							</div>
+							<p>Review us on Yelp!</p>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="footer">
-				<div class="flex-row">
+				<div class="content-wrap">
 					<div class="contact">
 						<img src="images/montoyalogoblk.png" alt="Montoya Electric Logo">
 						<h4>Chicago, Illinois</h4>
-						<h4>(773) 231-9754</h4>
-						<a href="https://www.facebook.com/montoya.electric/">
+						<h4>
+							<a href="tel:+17732319754">(773) 231-9754</a>
+						</h4>
+						<a href="https://www.facebook.com/montoya.electric/" target="_blank">
 							<img src="images/socialmedia/facebookiconblk.png" alt="Facebook Logo" >
 						</a>
-						<a href="https://www.yelp.com/biz/montoya-electric-chicago">
+						<a href="https://www.yelp.com/biz/montoya-electric-chicago" target="_blank">
 							<img src="images/socialmedia/yelplogoblk.png">
 						</a>
 					</div>
@@ -101,11 +127,14 @@
 						<h4>HOURS</h4>
 						<p>Mon - Fri: 7:00am - 4:00pm</p>
 						<p>Weekends: By appointment</p>
+						<div class="languages">
+							<h4>LANGUAGES</h4>
+							<p>English</p>
+							<p>Spanish</p>
+						</div>
 					</div>
-					<div class="list">
-						<h4>LANGUAGES</h4>
-						<p>English</p>
-						<p>Spanish</p>
+					<div class="credit-cards">
+						<img src="images/cardlogos.jpg" >
 					</div>
 					<div class="bottom-nav">
 						<nav>
@@ -118,7 +147,7 @@
 					</div>
 				</div>
 				<div class="copyright">
-					<h1>&#169;2017 Montoya Electric LLC</h1>
+					<h1>&#169;2017 Montoya Electric LLC</
 				</div>
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

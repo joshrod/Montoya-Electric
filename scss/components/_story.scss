@@ -1,0 +1,57 @@
+.story {
+	background-color: $off-white;
+	overflow: hidden;
+
+	.content-wrap {
+		@include md-tablet {
+			text-align: center;
+		}
+		@include sm-desktop {
+			display: table;
+			&:last-child {
+				direction: rtl;
+
+				.story-text {
+					padding-left: 0;
+					padding-right: 5%;
+				}
+			}
+		}
+
+		img {
+			@include md-tablet {
+				width: auto;
+				height: 30rem;
+			}
+			@include sm-desktop {
+				width: 100%;
+				height: auto;
+				max-width: 45rem;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+		.story-text {
+			@include md-tablet {
+				text-align: left;
+			}
+			@include sm-desktop {
+				width: 50%;
+				padding-left: 5%;
+				display: table-cell;
+				vertical-align: middle;
+				direction: ltr;
+			}
+		}
+
+		p {
+			margin: 2rem auto;
+			@include sm-desktop {
+				margin-left: auto;
+				margin-right: auto;
+				
+			}
+		}
+	}
+}

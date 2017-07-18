@@ -1,0 +1,144 @@
+.footer {
+	background-color: $off-white;
+	overflow: hidden;
+
+	.content-wrap {
+		@include clearfix;
+		width: 100%;
+		@include md-tablet {
+			width: 100%;
+			padding: 0 2rem;
+			display: table;
+		}
+		@include sm-desktop {
+			padding: 0 5rem;
+		}
+	}
+
+	.contact {
+		width: 45%;
+		display: inline-block;
+		@include md-tablet {
+			@include four-cells;
+		}
+
+		img {
+			width: 100%;
+			max-width: 20rem;
+		}
+
+		h4 {
+			margin: 5px 0;
+			font-family: $body-font;
+			font-weight: 400;
+			font-size: 1.4rem;
+			
+			a {
+				color: black;
+				text-decoration: underline;
+			}
+		}
+
+		a {
+			margin-top: 5px;
+			margin-right: 1rem;
+			text-decoration: none;
+			display: inline-block;
+			
+
+			img {
+				width: auto;
+				height: 2rem;
+			}
+		}
+	}
+
+	.list {
+		width: 45%;
+		display: inline-block;
+		float: right;
+		@include md-tablet {
+			@include four-cells;
+			float: none;
+		}
+
+		h4 {
+			font-family: $heading-font;
+			font-size: 1.8rem;
+			margin: 0 0 .5rem;
+		}
+
+		p {
+			margin: 0 0 .5rem;
+			font-size: 1.4rem;
+		}
+
+		.languages {
+			margin-top: 2rem;
+		}
+	}
+
+	.credit-cards {
+		margin-top: 2rem;
+		float: right;
+		width: 45%;
+		clear: both;
+		@include md-tablet {
+			@include four-cells;
+			float: none;
+			clear: none;
+		}
+
+		img {
+			max-width: 25rem;
+		}
+	
+
+	}
+
+	.bottom-nav {
+		font-family: $body-font;
+		font-weight: 700;
+		display: none;
+		@include md-tablet {	
+			@include four-cells;	
+		}
+
+		nav a {
+			margin-bottom: 1rem;
+			font-size: 1.4rem;
+			color: $gray-text;
+			text-align: right;
+			text-transform: uppercase;
+			text-decoration: none;
+			white-space: nowrap;
+			display: block;
+			&:hover {
+				@include transition-effects(.2s);
+				color: $electric-orange;
+			}
+			@include sm-desktop {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.copyright {
+		max-width: $md-desktop;
+		margin: 3rem auto;
+		text-align: center;
+		@include md-tablet {
+			width: 100%;
+			margin-bottom: 6rem;
+			padding-right: 7rem;
+			text-align: right;
+		}
+
+		h1 {
+			font-family: $body-font;
+			font-weight: 400;
+			font-size: 1.4rem;
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+.index-services {
+	background-color: white;
+	overflow: hidden;
+
+	/*
+		TODO: FIGURE OUT HOW TO INCORPORATE display: table;
+		      FOR TABLET WIDTHS.
+	*/
+
+	.content-wrap {
+		@include clearfix;
+		width: 100%;
+		margin-bottom: 3rem;
+		@include md-tablet {
+			margin: 6rem auto;
+		}
+		@include sm-desktop {
+			width: 100%;
+			margin: 10rem auto;
+			padding: 0 5rem;
+			display: table;
+		}
+	}
+
+	.service-card {
+		margin: 6rem 0 0;
+		@include md-tablet {
+			&:nth-child(1){
+				margin-top: 0;
+			}
+			&:nth-child(2){
+				margin-top: 0;
+			}
+			&:nth-child(odd){
+				float: left;
+			}
+			&:nth-child(even) {
+				float: right;
+			}
+		}
+		@include sm-desktop {
+			padding: 0 2rem;
+			&:nth-child(odd) {
+				float: none;
+			}
+			&:nth-child(even) {
+				float: none;
+			}
+		}
+	}
+}

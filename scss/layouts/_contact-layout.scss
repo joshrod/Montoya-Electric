@@ -1,0 +1,61 @@
+.contact-section {
+	background-color: white;
+	overflow: hidden;
+
+	.content-wrap {
+		margin: 0 auto;
+
+		.heading {
+			@include sm-desktop {
+				text-align: left;
+			}
+		}
+
+		hr {
+			@include sm-desktop {
+				width: 10rem;
+				margin-left: 0;
+			}
+		}
+
+		.form-wrap {
+			@include md-tablet {
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@include sm-desktop {
+				width: 43%;
+				margin: 0;
+				float: left;
+			}
+		}
+
+		.contact-info {
+			margin: 5rem auto;
+			@include md-tablet {
+				margin: 0 auto 6rem;
+				width: 50%;
+				display: inline-block;
+				float: left;
+			}
+			@include sm-desktop {
+				width: 43%;
+				float: right;
+			}
+		}
+
+		.social-media {
+			@include md-tablet {
+				width: 50%;
+				margin: 0 auto 6rem;
+				display: inline-block;
+			}
+			@include md-tablet {
+				width: 43%;
+				float: right;
+			}
+
+		}
+	}
+}

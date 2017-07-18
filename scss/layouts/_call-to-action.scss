@@ -1,0 +1,46 @@
+.call-to-action {
+	overflow: hidden;
+	background-color: $dark-gray;
+	color: white;
+	text-align: center;
+
+	.heading {
+		padding: 0 1rem;
+		color: white;
+	}
+
+	hr {
+		width: 20rem;
+	}
+
+	p {
+		max-width: 60rem;
+		margin: 3rem auto;
+		padding: 0 1rem;
+		line-height: 1.4;
+		@include md-tablet {
+			font-size: 2rem;
+			margin: 4rem auto;
+		}
+
+		a {
+			&:hover {
+				@include transition-effects(.2s);
+				color: $highlight-orange;
+			}
+		}
+	}
+
+	.contact-button {
+		margin: 3rem auto;
+		@include md-tablet {
+			margin-bottom: 6rem;
+		}
+	}
+
+	a {
+		color: $electric-orange;
+	}
+
+
+}

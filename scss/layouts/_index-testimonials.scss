@@ -1,0 +1,19 @@
+.index-testimonials {
+	overflow: hidden;
+	background-color: $off-white;
+
+	.content-wrap {
+		margin: 6rem auto 3rem;
+		@include md-tablet {
+			width: 100%;
+			margin-bottom: 6rem;
+		}
+
+		.testimonial {
+			&:nth-child(2) {
+				margin-top: 6rem;
+				margin-bottom: 6rem;
+			}
+		}
+	}
+}

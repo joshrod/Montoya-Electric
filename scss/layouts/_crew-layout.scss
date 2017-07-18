@@ -1,0 +1,25 @@
+.crew {
+	background-color: white;
+	overflow: hidden;
+
+	.content-wrap {
+		@include md-tablet {
+			margin-top: 4rem;
+		}
+
+		p {
+			margin-bottom: 3rem;
+			text-align: center;
+			@include md-tablet {
+				margin-top: 5rem;
+			}
+
+		}
+
+		.quilt-grid {
+			@include md-tablet {
+				margin: 7rem auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.contact-button {
+	width: 13rem;
+	height: 4.5rem;
+	text-align: center;
+	background-color: $electric-orange;
+	&:hover {
+		@include transition-effects(.2s);
+		background-color: $highlight-orange;
+	}
+
+
+	a {
+		font-family: $body-font;
+		line-height: 4.5rem;
+		color: white;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		h3 {
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.services {
+	overflow: hidden;
+	&:nth-of-type(odd) {
+		background-color: $off-white;
+	}
+	&:nth-of-type(even) {
+		background-color: white;
+	}
+	@include md-tablet {
+		&:nth-of-type(odd) {
+
+			.services-list {
+				padding: 0 7%;
+			}
+		}
+
+		&:nth-of-type(even) {
+			direction: rtl;
+
+			.services-list {
+				padding: 0 7%;
+				direction: ltr;
+			}
+		}
+	}
+
+	.content-wrap {
+		@include md-tablet {
+			padding: 0;
+			display: table;
+		}
+
+		.services-list {
+			@include md-tablet {
+				width: 60%;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+		.picture-column {
+			@include md-tablet {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+}
