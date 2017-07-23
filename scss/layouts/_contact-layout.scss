@@ -15,6 +15,11 @@
 			@include sm-desktop {
 				width: 10rem;
 				margin-left: 0;
+				display: inline-block;
+				text-align: left;
+				&:nth-of-type(1) {
+					display: block;
+				}
 			}
 		}
 

@@ -9,6 +9,10 @@
 
 	hr {
 		margin: 0 0 3rem;
+		@include md-tablet {
+			display: inline-block;
+			text-align: left;
+		}
 	}
 
 	section {

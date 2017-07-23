@@ -54,6 +54,10 @@ $(window).on('load', function() {
 
 	$('.card-link a').smoothScroll({offset: -25});
 
+	if ($(window).scrollTop() >= 100) {
+		navChanges();
+	}
+
 	$('#more').click(function() {
 		$('.nav-dropdown').slideToggle(400);
 		if ($(window).scrollTop() < 100) {
