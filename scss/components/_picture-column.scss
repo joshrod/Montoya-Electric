@@ -10,7 +10,7 @@
 			}
 		}
 		@include sm-desktop {
-			&:nth-child(n+5) {
+			&:nth-child(n+4) {
 				display: none;
 			} 
 		}

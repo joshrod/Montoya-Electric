@@ -1,0 +1,9 @@
+.story-text {
+	text-align: left;
+	
+	p {
+		@include sm-desktop {
+			font-size: 1.8rem;
+		}
+	}
+}

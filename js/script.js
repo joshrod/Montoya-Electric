@@ -59,7 +59,7 @@ $(window).on('load', function() {
 	}
 
 	$('#more').click(function() {
-		$('.nav-dropdown').slideToggle(400);
+		$('.nav-dropdown').slideToggle(200);
 		if ($(window).scrollTop() < 100) {
 			navChanges();
 		}
@@ -88,12 +88,12 @@ $(window).on('load', function() {
 function navChanges() {
 		
 	$('.navbar').addClass('scrolled-nav')
-	$(".logo-link img").attr("src","images/montoyalogoblk.png");
+	$(".logo-link img").attr("src","images/me-logo-blk.svg");
 	$('#more img').attr("src","images/moreblk.svg");
 }
 
 function navRevert() {
 	$('.navbar').removeClass('scrolled-nav');
-	$(".logo-link img").attr("src","images/montoyalogowht.png");
+	$(".logo-link img").attr("src","images/me-logo-wht.svg");
 	$('#more img').attr("src","images/morewht.svg");
 }

@@ -1464,6 +1464,12 @@ hr {
         margin-left: auto;
         margin-right: auto; } }
 
+.story-text {
+  text-align: left; }
+  @media (min-width: 960px) {
+    .story-text p {
+      font-size: 1.8rem; } }
+
 /*
 	TODO: TO INCORPORATE HOVER EFFECTS WITH
 		  ADDITIONAL INFORMATION DEPENDING ON CLIENT
@@ -1572,7 +1578,7 @@ hr {
     .picture-column img:nth-child(n+3) {
       display: block; } }
 @media (min-width: 960px) {
-  .picture-column img:nth-child(n+5) {
+  .picture-column img:nth-child(n+4) {
     display: none; } }
 
 form .field {
