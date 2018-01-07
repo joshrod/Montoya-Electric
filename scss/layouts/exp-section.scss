@@ -27,3 +27,27 @@
 		}
 	}
 }
+
+#commercial-services, #service-upgrades {
+
+	.content-wrap {
+
+		.picture-caption {
+			@include md-tablet {
+				width: 50%;
+			}
+		}
+	}
+}
+
+#residential-services {
+
+	.content-wrap {
+
+		.picture-caption {
+			@include md-tablet {
+				width: 33.33%;
+			}
+		}
+	}
+}

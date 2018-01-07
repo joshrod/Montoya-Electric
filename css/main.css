@@ -647,6 +647,7 @@ hr {
         margin-bottom: 0; }
       @media (min-width: 680px) {
         .two-by-three .content-wrap .picture-caption {
+          width: 33.33%;
           margin: 0;
           padding: 0 2rem;
           display: table-cell; } }
@@ -754,6 +755,14 @@ hr {
   @media (min-width: 960px) {
     .exp-section .content-wrap .picture-caption {
       padding: 0 3rem; } }
+
+@media (min-width: 680px) {
+  #commercial-services .content-wrap .picture-caption, #service-upgrades .content-wrap .picture-caption {
+    width: 50%; } }
+
+@media (min-width: 680px) {
+  #residential-services .content-wrap .picture-caption {
+    width: 33.33%; } }
 
 .services {
   overflow: hidden; }
@@ -1311,6 +1320,46 @@ hr {
     content: "";
     display: table;
     clear: both; }
+  @media (min-width: 680px) {
+    .testimonial {
+      display: table; }
+      .testimonial:nth-child(odd) .testimonial-text p {
+        padding-left: 10%; }
+      .testimonial:nth-child(2) {
+        direction: rtl; }
+        .testimonial:nth-child(2) .testimonial-text p {
+          direction: ltr;
+          padding-left: 0;
+          padding-right: 10%; } }
+  .testimonial .thumbnail-caption {
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 1.8rem; }
+    @media (min-width: 680px) {
+      .testimonial .thumbnail-caption {
+        display: table-cell; } }
+    .testimonial .thumbnail-caption img {
+      width: 10rem; }
+      @media (min-width: 400px) {
+        .testimonial .thumbnail-caption img {
+          width: 11rem; } }
+      @media (min-width: 680px) {
+        .testimonial .thumbnail-caption img {
+          width: 13rem; } }
+      @media (min-width: 960px) {
+        .testimonial .thumbnail-caption img {
+          width: 15rem; } }
+    .testimonial .thumbnail-caption h4 {
+      margin: 1rem auto 0;
+      font-family: "Raleway", "Arial Black", sans-serif;
+      font-weight: 700; }
+    .testimonial .thumbnail-caption p {
+      margin: 0 auto;
+      font-family: "Raleway", "Arial Black", sans-serif; }
+  @media (min-width: 680px) {
+    .testimonial .testimonial-text {
+      display: table-cell;
+      vertical-align: middle; } }
   .testimonial .testimonial-text p {
     font-family: "Raleway", "Arial Black", sans-serif;
     font-style: italic; }
@@ -1318,23 +1367,15 @@ hr {
       .testimonial .testimonial-text p {
         width: 100%;
         margin: 0 auto;
-        font-size: 2rem; } }
+        font-size: 2rem;
+        text-align: left; } }
     @media (min-width: 960px) {
       .testimonial .testimonial-text p {
         font-size: 2.2rem; } }
-  .testimonial .thumbnail-caption {
-    margin: 0 auto;
-    font-size: 1.8rem;
-    text-align: center; }
-    @media (min-width: 680px) {
-      .testimonial .thumbnail-caption {
-        margin-top: 1.4rem;
-        margin-right: 2rem; } }
-    .testimonial .thumbnail-caption p {
-      margin: 0 auto;
-      font-family: "Raleway", "Arial Black", sans-serif; }
-      .testimonial .thumbnail-caption p span {
-        font-weight: 700; }
+
+.testimonial:nth-child(2) {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
 
 .sub-hero {
   width: 100vw;

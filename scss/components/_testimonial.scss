@@ -1,8 +1,67 @@
 .testimonial {
 	@include clearfix;
 	text-align: center;
+	@include md-tablet {
+		display: table;
+		&:nth-child(odd) {
+			.testimonial-text {
+				p {
+					padding-left: 10%;
+				}
+			}
+		}
+		&:nth-child(2){
+			direction: rtl;
+
+			.testimonial-text {
+				p {
+					direction: ltr;
+					padding-left: 0;
+					padding-right: 10%;
+				}
+			}
+		}
+	}
+
+	.thumbnail-caption {
+		margin: 0 auto;
+		display: inline-block;
+		font-size: 1.8rem;
+		@include md-tablet {
+			display: table-cell;
+		}
+
+		img {
+			width: 10rem;
+			@include md-phone {
+				width: 11rem;
+			}
+			@include md-tablet {
+				width: 13rem;
+			}
+
+			@include sm-desktop {
+				width: 15rem;
+			}
+		}
+
+		h4 {
+			margin: 1rem auto 0;
+			font-family: $heading-font;
+			font-weight: 700;
+		}
+
+		p {
+			margin: 0 auto;
+			font-family: $heading-font;
+		}
+	}
 
 	.testimonial-text {
+		@include md-tablet {
+		display: table-cell;
+		vertical-align: middle;
+		}
 
 		p {
 			font-family: $heading-font;
@@ -11,29 +70,19 @@
 				width: 100%;
 				margin: 0 auto;
 				font-size: 2rem;
+				text-align: left;
+				
+
 			}
 			@include sm-desktop {
 				font-size: 2.2rem;
 			}
 		}
 	}
-
-	.thumbnail-caption {
-		margin: 0 auto;
-		font-size: 1.8rem;
-		text-align: center;
-		@include md-tablet {
-			margin-top: 1.4rem;
-			margin-right: 2rem;
-		}
-
-		p {
-			margin: 0 auto;
-			font-family: $heading-font;
-
-			span {
-				font-weight: 700;
-			}
-		}
+}
+.testimonial {
+	&:nth-child(2) {
+		margin-top: 6rem;
+		margin-bottom: 6rem;
 	}
 }
