@@ -52,6 +52,9 @@ $(function() {
 
 $(window).on('load', function() {
 
+	/* HIDE THE HONEYPOT */
+	$('#phone').hide();
+
 	$('.card-link a').smoothScroll({offset: -25});
 
 	if ($(window).scrollTop() >= 100) {

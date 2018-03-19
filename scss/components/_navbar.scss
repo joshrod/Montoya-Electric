@@ -81,7 +81,7 @@
 				line-height: 3.5rem;
 			}
 			@include sm-desktop {
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 				padding-left: 2rem;
 				line-height: 4.5rem;
 			}
@@ -93,10 +93,11 @@
 		}
 
 		.nav-contact {
+			color: $electric-orange;
 			white-space: nowrap;
 			&:hover {
 				@include transition-effects(.2s);
-				color: $electric-orange;
+				color: $highlight-orange;
 			}
 		}
 

@@ -910,7 +910,6 @@ hr {
     .footer .list .languages {
       margin-top: 2rem; }
   .footer .credit-cards {
-    margin-top: 2rem;
     float: right;
     width: 45%;
     clear: both; }
@@ -922,6 +921,10 @@ hr {
         vertical-align: top;
         float: none;
         clear: none; } }
+    .footer .credit-cards h4 {
+      font-family: "Raleway", "Arial Black", sans-serif;
+      font-size: 1.8rem;
+      margin: 0 0 .5rem; }
     .footer .credit-cards img {
       max-width: 25rem; }
   .footer .bottom-nav {
@@ -1045,19 +1048,20 @@ hr {
           line-height: 3.5rem; } }
       @media (min-width: 960px) {
         .navbar .info-bar p, .navbar .info-bar .nav-contact {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding-left: 2rem;
           line-height: 4.5rem; } }
     .navbar .info-bar p {
       padding-left: 1rem;
       white-space: nowrap; }
     .navbar .info-bar .nav-contact {
+      color: #ee6c00;
       white-space: nowrap; }
       .navbar .info-bar .nav-contact:hover {
         -webkit-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
-        color: #ee6c00; }
+        color: #f7b00c; }
     .navbar .info-bar .nav-social {
       width: 25%;
       height: 100%;
@@ -1604,7 +1608,8 @@ form label {
       font-size: 2rem; } }
 form input {
   width: 100%;
-  height: 3.5rem; }
+  height: 3.5rem;
+  border: 1px solid #ccc; }
   @media (min-width: 680px) {
     form input {
       height: 4rem; } }
@@ -1615,7 +1620,8 @@ form input {
 form textarea {
   width: 100%;
   height: 15rem;
-  resize: none; }
+  resize: none;
+  border: 1px solid #ccc; }
   @media (min-width: 680px) {
     form textarea {
       height: 18rem; } }
